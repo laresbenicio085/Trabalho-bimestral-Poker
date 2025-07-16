@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index-styles.css">
+    <title>o-que-e-poker</title>
+</head>
+<body>
+    <header>
+        <h1>Poker</h1>
+        <p>O poker é um jogo de cartas jogado por duas ou mais pessoas, 
+           onde o objetivo é ganhar um pote de fichas, 
+           formado pelas apostas dos jogadores, através da combinação das cartas na mão com as cartas na mesa (no caso de algumas variantes).
+           É um jogo que combina habilidade, estratégia e um pouco de sorte, onde os jogadores podem blefar para enganar seus oponentes. 
+        </p>
+        <nav id="sidebar">
+            <h2>Links externos</h2>
+            <ul>
+                <li><a href="https://worldpokerfederation.org/pt/poker/a-historia-do-poquer/" target="_blank">O que é poker?</a></li>
+                <li><a href="https://www.pokerstars.com/pt-BR/poker/games/texas-holdem/" target="_blank">Como jogar poker?</a></li>
+                <li><a href="https://www.marceloparazzi.com.br/blog/como-ajudar-alguem-com-vicio-em-jogos-de-azar/" target="_blank">Como vencer o vício de apostas?</a></li>
+                <li><a href="https://www.247freepoker.com/" target="_blank">Jogar poker</a></li>
+            </ul>
+        </nav>
+        <section id="demo-de-poker">
+            <h3>Demo de poker</h3>
+            <p>Você receberá 5 cartas. 
+           Escolha qualquer quantidade de cartas e troque elas, depois as cartas do computador serão reveladas. 
+           Use a lista a seguir para ver as <a href="sub-paginas/maos-de-poker.html" target="_self">mãos de poker</a>:
+            </p>
+        
+          <article id="game-container" lang="pt-BR">
+              <div><strong id="label-player-hand"></strong></div>
+              <div id="player-hand"></div>
+
+              <button id="deal-btn">Distribuir cartas</button>
+              <button id="swap-btn" disabled>Trocar cartas</button>
+
+              <div style="margin-top: 20px;"><strong id="label-cpu-hand"></strong></div>
+              <div id="cpu-hand"></div>
+
+              <div id="result"></div>
+          </article>
+        </section>
+    </header>
+    <main>       
+        <section>
+            <h2>Como funciona poker?</h2>
+            <ul id="links">
+                <li><a href="sub-paginas/maos-de-poker.html" target="_self">Combinações de cartas</a><p>
+                        Cada jogador recebe um número específico de cartas (dependendo da variante) e tenta formar a melhor combinação possível de acordo com as regras do jogo. 
+                    </p></li>
+                <li><a href="sub-paginas/estrategias-de-aposta.html" target="_self">Apostas</a><p>
+                        Em cada rodada, os jogadores apostam fichas com base na força de suas mãos, na sua capacidade de blefar ou na expectativa de que suas cartas melhorem. 
+                    </p></li>
+                <li><a href="sub-paginas/blefes.html" target="_self">Blefe</a><p>
+                    O poker permite que os jogadores apostem alto com mãos fracas para induzir os outros a desistir, o que adiciona uma camada de estratégia e psicologia ao jogo. 
+                    </p></li>
+                <li><a href="" target="_self">Rodadas</a><p>
+                    Em jogos como Texas Hold'em, existem várias rodadas de apostas (pré-flop, flop, turn e river) com cartas comunitárias reveladas a cada rodada. 
+                    </p></li>
+                <li><a href="" target="_self">Showdown</a><p>
+                    Se mais de um jogador permanecer na mão após a última rodada de apostas, acontece o "showdown", onde as mãos são reveladas e a melhor combinação vence o pote. 
+                    </p></li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="poker-demo.js"></script>
+
+</style>
+</body>
+</html>
