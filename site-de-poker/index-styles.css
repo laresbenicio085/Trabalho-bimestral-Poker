@@ -1,8 +1,10 @@
   body{
-    background: linear-gradient(0deg,rgb(136, 136, 136) 0%, rgba(0, 0, 0, 1) 20%);
+    background: linear-gradient(0deg,rgb(49, 19, 19) 0%, rgb(143, 26, 26));
     background-repeat: repeat-x;
     background-size: contain;
-    min-height: 200vh;
+    height: 95vh;
+    overflow: hidden;
+    height: 100vh;
   }
 
   /* Estilo do texto */
@@ -18,29 +20,44 @@
     width: 60%;
   }
 
-  /* Estilo da barra de links externos */
-  #sidebar{
-    position: sticky;
-    top: 10px;
-    right: 10px;
-    position: absolute; 
-    height: 100%
+  .falling-card {
+  position: absolute;
+  width: 100px;
+  z-index: 1;
+  transition: transform 0.1s linear;
   }
+
   nav ul{
-    position: sticky;
     top: 10px;
     right: 10px;
     padding: 30px;
-    background-image: linear-gradient(black, rgb(29, 29, 29));
-    border: 4mm ridge rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px rgba(0, 0, 0, 0.6);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #main-image{
+    position: absolute;
+    bottom: 10px;
+    right: 30%;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
   /* Estilo do demo de Poker */
   #demo-de-poker{
     background-color: rgba(119, 119, 119, 0.4);
-    width: 40%;
+    width: 100%;
     padding: 5px;
     border-radius: 5px;
+    display: flex;
+    flex-flow: column;
   }
 
   /* Container do jogo */
@@ -49,7 +66,7 @@
     padding: 15px;
     width: max-content;
     font-family: Arial, sans-serif;
-    background-color: #470000;
+    background-color: #238b19;
     border-radius: 8px;
   }
 
@@ -62,14 +79,14 @@
 
   /* Estilo das cartas */
   .card {
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
     padding: 10px;
     width: 50px;
     text-align: center;
     border-radius: 5px;
     user-select: none;
     cursor: default;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 16px;
     color: rgb(255, 255, 255);
@@ -77,13 +94,16 @@
     transition: background-color 0.3s;
   }
   .card.red {
-    color: red;
+    color: rgb(255, 0, 0);
+  }
+  .card.black {
+    color: rgb(0, 0, 0);
   }
   .card.selectable {
     cursor: pointer;
   }
   .card.selected {
-    background-color: #cfc;
+    background-color: rgb(233, 118, 118);
   }
 
   /* Estilo do verso das cartas */

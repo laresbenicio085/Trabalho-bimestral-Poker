@@ -66,6 +66,9 @@
       if (card.suit === '♥' || card.suit === '♦') {
         cardDiv.classList.add('red');
       }
+      if (card.suit === '♠' || card.suit === '♣') {
+        cardDiv.classList.add('black');
+      }
       if (selectable) {
         cardDiv.classList.add('selectable');
         cardDiv.addEventListener('click', () => {
